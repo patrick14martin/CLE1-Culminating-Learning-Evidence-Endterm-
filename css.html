@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+<link rel="stylesheet" href="styles.css">
+<style>
+    ul{
+        color:white;
+    }
+    .box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    animation: rotate 5s infinite;
+    margin:auto;
+    
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg); 
+  } 
+  20% {
+    transform: rotate(75deg);
+  } 
+  40% {
+    transform: rotate(90deg);
+  }
+  60% {
+    transform: rotate(120deg);
+  }
+  80% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.container{
+    text-align: center;
+    animation: slideIn 1s forwards;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.box2{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    animation: scale 5s infinite;
+    margin:auto;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1,1); 
+  } 
+  20% {
+    transform: scale(1,2);
+  } 
+  40% {
+    transform: scale(1,4);
+  }
+  60% {
+    transform: scale(2,1);
+  }
+  80% {
+    transform: scale(2,2);
+  }
+  100% {
+    transform: scale(4,4);
+  }
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    animation: skew 5s infinite;
+    margin:auto;
+}
+
+
+@keyframes skew {
+  0% { transform: skew(10deg);    }
+  20% { transform: skew(20deg);
+  }
+  40% { transform: skew(45deg);
+  }
+  60% { transform: skew(60deg);
+  }
+  80% { transform: skew(80deg);
+  }
+  100% { transform: skew(120deg);
+    
+  }
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+  animation: transform 5s infinite;
+  margin:auto;
+}
+
+
+@keyframes transform{
+  0% {    transform: translate(10px,20px);  
+  } 20% { transform: translate(10px,40px);
+    
+  } 40% { transform: translate(20px,10px);
+    
+  } 60% { transform: translate(20px,40px);
+    
+  } 80% { transform: translate(60px,60px);
+    
+  } 100% { transform: translate(10px,20px);
+    
+  }
+}
+@keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+</style>
+</head>
+<div class="background-svg">
+<header>
+    <div class="navbar">
+        <div class="navbar-right">
+        <a href="index.html">Home</a>
+        <a href="css.html" class="active">CSS</a>
+        <a href="svg.html">SVG</a>
+        <a href="canvas.html">CANVAS</a>
+        <a href="about.html">About me</a>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container">
+        
+    <ul>
+        <li><a href="https://codepen.io/Patrick-Mike-Jordan/pen/ExGLjZz">CSS Rotate</a></li>
+        <br><br><br>
+        <div class="box">Element</div>
+        <br><br><br>
+
+        <li><a href="https://codepen.io/Patrick-Mike-Jordan/pen/eYbrNRx">CSS Scale</a></li>
+        <br><br><br>
+        <div class="box2">Element</div>
+        <br><br><br>
+
+
+        <li><a href="https://codepen.io/Patrick-Mike-Jordan/pen/VwqxLra">CSS Skew</a></li>
+        <br><br><br>
+        <div class="box3">Element</div>
+        <br><br><br>
+
+
+
+        <li><a href="https://codepen.io/Patrick-Mike-Jordan/pen/dyweomM">CSS Translate</a></li>
+        <br><br><br>
+        <div class="box4">Element</div>
+        <br><br><br>
+
+
+    </ul>
+</div>
+</div>
+</body>
+</html>

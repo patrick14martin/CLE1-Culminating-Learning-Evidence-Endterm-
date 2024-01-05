@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    
+<link rel="stylesheet" href="styles.css">
+<style>
+   .container{
+    
+    text-align: center;
+    justify-content: center;
+    animation: slideIn 1s forwards;
+   } 
+   .background-svg{
+    height:auto;
+   }
+   .container a{
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+   }
+   @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+</style>
+</head>
+<div class="background-svg">
+<header>
+    <div class="navbar">
+        <div class="navbar-right">
+        <a href="index.html">Home</a>
+        <a href="css.html">CSS</a>
+        <a href="svg.html" class="active">SVG</a>
+        <a href="canvas.html">CANVAS</a>
+        <a href="about.html">About me</a>
+        </div>
+    </div>
+</header>
+<body>
+<div class="container">
+<a href="https://github.com/patrick14martin/-SVG-text-art---CASTRO/blob/main/svgtextart.html">SVG Poem Text Art</a>
+<h2> Sonnet 43 by William Shakespeare</h2>
+<svg width="900" height="780" xmlns="http://www.w3.org/2000/svg">
+    <path id="heartPath" d="M450,150 C450,50 250,50 250,250 C250,400 450,550 450,750 C450,550 650,400 650,250 C650,50 450,50 450,150" fill="none" stroke="black" />
+    <text font-family="Arial" font-size="14" fill="black">
+      <textPath xlink:href="#heartPath">
+        How do I love thee? Let me count the ways. I love thee to the depth and breadth and height My soul can reach, when feeling out of sight For the ends of Being and ideal Grace. I love thee to the level of every day's Most quiet need, by sun and candlelight. I love thee freely, as men strive for Right; I love thee purely, as they turn from Praise. I love with a passion put to use In my old griefs, and with my childhood's faith. I love thee with a love I seemed to lose With my lost saints, - I love thee with the breath, Smiles, tears, of all my life! - and, if God choose, I shall but love thee better after death.
+      </textPath>
+    </text>
+  </svg>
+
+</div>
+</div>   
+</body>
+</html>
